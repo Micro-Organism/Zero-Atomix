@@ -1,0 +1,3 @@
+spring:
+    application:
+        name: zero-atomix-java

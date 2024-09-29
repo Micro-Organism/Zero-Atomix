@@ -1,0 +1,27 @@
+spring:
+    application:
+        name: zero-atomix-java
+zero:
+    atomix:
+        node: node1
+        cluster-id: my-cluster
+        member-id: 1
+        host: localhost
+        manage-group:
+            name: system
+            port: 5679
+            data-dir: system
+            number-partition: 1
+        partition-group:
+            name: system
+            data-dir: data
+        async-map:
+            name: myCfgName
+            key: HBLOG
+            value: http://www.baidu.cn
+        async-leader-elector:
+            name: leader
+            protocol:
+                max-time-out: 15000L
+
+
